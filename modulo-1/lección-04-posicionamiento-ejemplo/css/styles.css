@@ -1,0 +1,23 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+.red {
+    background-color: red;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.blue {
+    background-color: blue;
+    position: fixed;
+    top: 0;
+}

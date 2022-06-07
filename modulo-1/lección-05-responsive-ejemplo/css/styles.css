@@ -1,0 +1,60 @@
+.body {
+    height: 100vh;
+}
+
+.header {
+    background-color: grey;
+    height: 10%;
+}
+
+.main {
+    height: 90%;
+}
+
+.main .links {
+    background-color: green;
+  
+}
+
+.main .content {
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .title {
+    width: 100%;
+}
+
+
+.main .related {
+    background-color: gray;
+}
+
+.box-orange {
+    width: 45%;
+    height: 120px;
+    background-color: orange;
+    display: none;
+}
+
+@media all and (min-width: 480px) {
+    .main {
+        display: flex;
+    }
+    .box-orange {
+        display: block;
+    }
+    .main .text {
+        width: 45%;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .lateral {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
