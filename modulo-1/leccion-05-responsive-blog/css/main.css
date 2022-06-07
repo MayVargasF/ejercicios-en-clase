@@ -1,0 +1,109 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+/* off topic: SPAN sirve para marcar un trozo de un texto y darle un estilo distinto a ese trozo. */
+
+.header .imagen {
+    width: 120px;
+    margin: 10px;
+}
+
+/* Si tenemos elementos que se repiten a menudo generamos una VARIABLE y así cada vez que necesitemos esos elementos, llamaremos a esa variable, así si necesitamos cambiar esa propiedad en todas partes, sólo tenemos que cambiarla en la variable, podemos ponerlas en la root todas e ir a buscar cada vez la que necesitemos */
+
+:root{
+    --color-principal: #14d9c4;
+    --color-secundario: white;
+}
+
+li{
+    display: inline-block;
+
+    /* Si usamos inline-block en lugar de inline, podemos apilcarle altura, anchura,padding,etc. */
+}
+
+/* POSITION: si el elemento es fixed, hay que darle un margen por arriba al siguiente elemento para que no se ponga encima, si es sticky ya directamente se posiciona por encima y no hay que darle margen al siguiente. */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100px;
+}
+
+.header .button{
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-align: center;
+    width: 10rem;
+}
+
+.header .menu {
+    display: flex;
+}
+
+.header .active{
+    color: black;
+    background-color: var(--color-secundario);
+}
+
+.welcome {
+    font-size: 20px;
+}
+
+.main .welcome {
+    background-image: url(../images/Cabecera-Blog-de-Adalab\ \(1\).png) ;
+    background-position: center;
+    height: 450px;
+    padding-left: 5%;
+}
+
+.main .title{
+    color: var(--color-secundario);
+    font-size: 30px;
+    width: 50%;
+    padding-top: 20%;
+}
+
+.main .button {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    width: 10e,;
+    height: 50px;   
+    margin-top: 20px;
+}
+
+.message {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-principal);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* le podemos aplicar otra clase al icono  */
+
+.icon {
+    color: white;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
