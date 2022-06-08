@@ -1,0 +1,66 @@
+:root {
+    /* poner siempre aquí fuentes y colores */
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    --fire-engine-red: #cc212a;
+}
+
+
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .title {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--fire-engine-red);
+    width: 50%; 
+    text-align: center;
+}
+
+
+.footer {
+    border-top: solid var(--fire-engine-red) 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ball {
+    background-color: var(--fire-engine-red);
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 800;
+    transform: translateY(-50px)
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+        box-sizing: border-box;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .ball {
+        transform: none;
+
+    }
+}
